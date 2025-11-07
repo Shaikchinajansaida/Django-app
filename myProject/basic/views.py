@@ -7,5 +7,7 @@ def sample (request):
 def sampleinfo (request):
     data ={"result":[1,2,3]}
     return JsonResponse(data)
+def hello (request):
+    return HttpResponse("Happy birthday OG")
 
 

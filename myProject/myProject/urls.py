@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from basic.views import sample
 from basic.views import sampleinfo
+from basic.views import hello
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('greet/',sample),
-    path ('info/',sampleinfo)
+    path ('info/',sampleinfo),
+    path('jan/',hello)
 ]
